@@ -320,20 +320,6 @@ if __name__ == '__main__':
     add_cpp(charge_data)
     add_scd(charge_data)
     
-    """
-    for num in nums:
-        print('num = {}'.format(num))
-        print('SCD')
-        scd_data = get_number_data(charge_data, 12.7, num, 'SCD')
-        scd_data.to_excel('PTFE_{}_12.7mm_SCD.xlsx'.format(num))
-        print('CPP')
-        cpp_data = get_number_data(charge_data, 12.7, num, 'CPP')
-        cpp_data.to_excel('PTFE_{}_12.7mm_CPP.xlsx'.format(num))
-        print('Charge')
-        charges_data = get_number_data(charge_data, 12.7, num, 'Charge')
-        charges_data.to_excel('PTFE_{}_12.7mm_Charge.xlsx'.format(num))
-    """
-    
     #save_data(charge_data, 6.35,  'Charge')
     save_data(charge_data, '6.35_256_roll_long_wait_1',  'CPP')
    # save_data(charge_data, 3.969, 'SCD')
